@@ -4,12 +4,57 @@
     font-family: system-ui;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header, main, footer, nav{
     border: 1px solid;
     min-height: 10vh;
     padding: 3%;
 }
 
+nav{
+    display: grid;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+.menuButton{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+main{
+    min-height: 130vh;
+}
+
+@media(min-width: 600px){
+
+    nav{
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+    }
+
+    .menuButton{
+        display: none;
+    }
+
+}
 
 
 
