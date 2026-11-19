@@ -43,9 +43,10 @@ main{
     min-height: 130vh;
 }
 
-@media(min-width: 600px){
+@media(min-width:600px){
 
-    nav{
+    nav.headerNav{
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
     }
@@ -55,22 +56,6 @@ main{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
