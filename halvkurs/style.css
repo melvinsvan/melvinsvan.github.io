@@ -14,6 +14,26 @@ header, main, footer, nav{
     padding: 3%;
 }
 
+/*bilder*/
+
+img{
+    width: 100%;
+}
+
+.imgBox{
+    border: 2px solid;
+    padding: 3%;
+}
+
+
+.card{
+    display: grid;
+    gap: 10px;
+    border: 1px solid;
+    padding: 3%;
+}
+
+/*bilder*/
 nav{
     display: grid;
     gap: 20px;
@@ -39,6 +59,7 @@ nav a:hover{
     background-color: transparent;
     border: none;
     font-size: 2rem;
+    transform: rotate(-45deg);
 }
 
 .hidden{
@@ -46,7 +67,7 @@ nav a:hover{
 }
 
 main{
-    min-height: 130vh;
+    min-height: 60vh;
 }
 
 div.faq_footer{
@@ -66,18 +87,35 @@ h1{
 footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 3%;
 }
 
 @media(min-width:600px){
 
     nav.headerNav{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         place-items: center;
     }
 
     .menuButton{
         display: none;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imgBox{
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+    }
+
+    .imgBox img{
+        height: 100%;
+        object-fit: cover;
     }
 
 }
